@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="njMoAaXL"></script>
 <div id="menu">
 <li><a href="#about">About Me</a></li>
 <li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
+<li><a href="#playlist">My Highlights</a></li>
 <li><a href="#like">Like</a></li>
 <li><a href="#qrcoder">QR code</a></li>
 <li><a href="#spa">Q&A</a></li>
 <li><a href="#contact">Contact Me</a></li>
 </div>
-		  
+
+
+
+
+
+
+
+
+
 <section id="about" class="section">
 <br/>
 <br/>
 <br/>
 <br/>
+<h1 align = center>About Kareem Abdul-Jabbr</h1>
+<br/>
+kareem Abdul-Jabbar is an American former professional basketball player 
+<br/>
+<br/>
+played 20 seasons in the National Basketball Association (NBA) for the Milwaukee Bucks and the Los Angeles Lakers.
 <br/>
 <br/>
 <br/>
@@ -28,10 +45,6 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-about me
 <br/>
 <br/>
 <br/>
@@ -54,7 +67,68 @@ about me
 <br/>
 <br/>
 <br/>
-my photos
+<h2 align = center>Photos of Kareem Abdul-Jabbr</h2>
+<br/>
+
+<head>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="gallery">
+  <a target="_blank" href="220px-Kareem_Abdul-Jabbar_May_2014.jpg">
+    <img src="220px-Kareem_Abdul-Jabbar_May_2014.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Abdul-Jabbar in 2014</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="160px-Lew_Alcindor_Kareem_Abdul-Jabbar_UCLA.jpg">
+    <img src="160px-Lew_Alcindor_Kareem_Abdul-Jabbar_UCLA.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Alcindor with the reverse two-hand dunk during a victory against Stanford.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Kareem_Abdul-Jabbar_NCAA_Championship.jpg">
+    <img src="Kareem_Abdul-Jabbar_NCAA_Championship.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">net cutting at Freedom Hall in Louisville in 1969 after a 20-point win over Purdue and Rick Mount in unprecedented third-straight national title en route to seven consecutive national championships for UCLA.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="180px-Wes_Unseld_and_Kareem_Abdul-Jabbar.jpg">
+    <img src="180px-Wes_Unseld_and_Kareem_Abdul-Jabbar.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Alcindor displaying the sky-hook over Wes Unseld of the Baltimore Bullets. The shot was almost impossible to block.</div>
+</div>
+
+</body>
+
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
@@ -77,10 +151,21 @@ my photos
 <br/>
 <br/>
 <br/>
-my playlist
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
+<h3 align = center id="Highlights">Songs that he likes</h3>
+<br/>
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/g0OKClJLUWo?autoplay=0&mute=1"></iframe>
+
+<iframe style="margin-right: 50px" width="420" height="315" src="https://www.youtube.com/embed/133YwacaFPQ" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture" allowfullscreen>
+                    </iframe>
 </section>
 
 <section id="like" class="section">
@@ -100,8 +185,9 @@ my playlist
 <br/>
 <br/>
 <br/>
-give me a like
+<h4 align = center>Like if you like the site</h4>
 <br/>
+<div class="fb-like" data-href="file:///C:/Users/User/Downloads/assignment1-LiorTab-main/assignment1-LiorTab/index.html#about" data-width="" data-layout="box_count" data-action="like" data-size="large" data-share="true"></div>
 <br/>
 <br/>
 </section>
@@ -153,26 +239,27 @@ ans
 </section>
 
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
+  <div id= "ContactMe">
+    <h5 align = center>Can Make Contact With Me At: </h5> 
+    <br>
+    <form action="https://formsubmit.co/liortaba@post.bgu.ac.il" method="POST">
+        Your Name:
+        <input type="text" name="Name" required></br>
+      Email To:
+        <input type="email" name="Email" required></br> 
+        Phone:
+        <input type="phone" name="Phone" required></br> 
+        Message:
+        <textarea type="text" name="Message" required></textarea>
+    </br>
+        <button type="submit">Send</button>
+    </form>
+
+
+    <a href="PHONE" style="color:white;"> PHONE: 123456789 |</a>            
+     
+    <a href="#email" id ="tab" style="color:white;"> eMail: GriffinPeter@gmail.com</a>
+</div>
 </section>
 
 
